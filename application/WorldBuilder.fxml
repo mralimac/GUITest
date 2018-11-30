@@ -13,65 +13,69 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="384.0" prefWidth="600.0">
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <TitledPane animated="false" layoutX="416.0" layoutY="55.0" prefHeight="145.0" prefWidth="170.0" text="Buttons">
-              <content>
-                <AnchorPane visible="false">
-                     <children>
-                        <BorderPane layoutX="24.0" layoutY="12.0" prefHeight="116.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                           <top>
-                              <Button id="ForwardButton" fx:id="ForwardButton" mnemonicParsing="false" prefWidth="65.0" text="Forward" BorderPane.alignment="CENTER" />
-                           </top>
-                           <left>
-                              <Button id="LeftButton" mnemonicParsing="false" text="Left" BorderPane.alignment="CENTER" />
-                           </left>
-                           <right>
-                              <Button id="RightButton" mnemonicParsing="false" text="Right" BorderPane.alignment="CENTER" />
-                           </right>
-                        </BorderPane>
-                     </children>
-                  </AnchorPane>
-              </content>
-            </TitledPane>
-            <ChoiceBox id="ICWorld" layoutX="14.0" layoutY="15.0" prefHeight="28.0" prefWidth="202.0" />
-            <TitledPane animated="false" layoutX="14.0" layoutY="55.0" prefWidth="202.0" text="World">
-               <content>
-                  <ImageView id="imageView" fitHeight="305.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-               </content>
-            </TitledPane>
-            <TextField id="MessageField" layoutX="238.0" layoutY="16.0" prefHeight="26.0" prefWidth="356.0" />
-            <TitledPane animated="false" layoutX="230.0" layoutY="55.0" prefHeight="334.0" prefWidth="170.0" text="Inventory">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <ImageView id="itemView" fitHeight="145.0" fitWidth="145.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </TitledPane>
-            <TitledPane animated="false" layoutX="416.0" layoutY="222.0" prefHeight="165.0" prefWidth="170.0" text="World Interaction">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Button id="pickUp" layoutX="22.0" layoutY="23.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Pickup" />
-                        <Button id="putDown" layoutX="22.0" layoutY="76.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Put down" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </TitledPane>
-            <MenuBar layoutY="2.0">
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                    <MenuItem id="ICWorld" mnemonicParsing="false" text="ICWorld" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
+            <AnchorPane prefHeight="384.0" prefWidth="600.0">
+               <children>
+                  <TitledPane animated="false" layoutX="416.0" layoutY="55.0" prefHeight="145.0" prefWidth="170.0" text="Buttons">
+                    <content>
+                      <AnchorPane visible="false">
+                           <children>
+                              <BorderPane layoutX="24.0" layoutY="12.0" prefHeight="116.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <Button id="ForwardButton" fx:id="ForwardButton" mnemonicParsing="false" prefWidth="65.0" text="Forward" BorderPane.alignment="CENTER" />
+                                 </top>
+                                 <left>
+                                    <Button id="LeftButton" mnemonicParsing="false" text="Left" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button id="RightButton" mnemonicParsing="false" text="Right" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <ChoiceBox id="ICWorld" layoutX="14.0" layoutY="15.0" prefHeight="28.0" prefWidth="202.0" />
+                  <TitledPane animated="false" layoutX="14.0" layoutY="55.0" prefWidth="202.0" text="World">
+                     <content>
+                        <ImageView id="imageView" fitHeight="305.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                     </content>
+                  </TitledPane>
+                  <TextField id="MessageField" layoutX="238.0" layoutY="16.0" prefHeight="26.0" prefWidth="356.0" />
+                  <TitledPane animated="false" layoutX="230.0" layoutY="55.0" prefHeight="334.0" prefWidth="170.0" text="Inventory">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="itemView" fitHeight="145.0" fitWidth="145.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="416.0" layoutY="222.0" prefHeight="165.0" prefWidth="170.0" text="World Interaction">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button id="pickUp" layoutX="22.0" layoutY="23.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Pickup" />
+                              <Button id="putDown" layoutX="22.0" layoutY="76.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Put down" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <MenuBar layoutY="2.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem id="ICWorld" mnemonicParsing="false" text="ICWorld" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
          </children>
-      </AnchorPane>
+      </VBox>
    </children>
-</VBox>
+</AnchorPane>
